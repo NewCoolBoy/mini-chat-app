@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="ChatCell" customModule="apptchat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvO-Lp-YRq" customClass="ViewArrondie" customModule="apptchat" customModuleProvider="target">
+                        <rect key="frame" x="117" y="20" width="250" height="119.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52g-m5-8RI">
+                                <rect key="frame" x="0.0" y="5" width="250" height="84.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="nZD-8b-Nzj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6N-WP-cNY">
+                                <rect key="frame" x="104" y="93.5" width="138" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7AZ-al-rdE"/>
+                                    <constraint firstAttribute="width" constant="138" id="XPa-aM-vGB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ugf-PX-wTJ" customClass="ImageArrondie" customModule="apptchat" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="240" height="83.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="52g-m5-8RI" secondAttribute="trailing" id="2Vg-y3-uEA"/>
+                            <constraint firstAttribute="bottom" secondItem="U6N-WP-cNY" secondAttribute="bottom" constant="5" id="3CT-mA-eoJ"/>
+                            <constraint firstItem="Ugf-PX-wTJ" firstAttribute="top" secondItem="uvO-Lp-YRq" secondAttribute="top" constant="5" id="8Oz-I3-Dc8"/>
+                            <constraint firstItem="52g-m5-8RI" firstAttribute="leading" secondItem="uvO-Lp-YRq" secondAttribute="leading" id="OBK-rm-yUf"/>
+                            <constraint firstItem="U6N-WP-cNY" firstAttribute="top" secondItem="Ugf-PX-wTJ" secondAttribute="bottom" constant="5" id="eZw-Sg-UEm"/>
+                            <constraint firstAttribute="bottom" secondItem="52g-m5-8RI" secondAttribute="bottom" constant="30" id="jgm-DU-nRk"/>
+                            <constraint firstItem="Ugf-PX-wTJ" firstAttribute="leading" secondItem="uvO-Lp-YRq" secondAttribute="leading" constant="5" id="mhM-2O-qVG"/>
+                            <constraint firstItem="52g-m5-8RI" firstAttribute="top" secondItem="uvO-Lp-YRq" secondAttribute="top" constant="5" id="qbj-2X-RXk"/>
+                            <constraint firstAttribute="trailing" secondItem="Ugf-PX-wTJ" secondAttribute="trailing" constant="5" id="sWH-Cm-fob"/>
+                            <constraint firstAttribute="trailing" secondItem="U6N-WP-cNY" secondAttribute="trailing" constant="8" id="u1Z-PY-OZy"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_profil" translatesAutoresizingMaskIntoConstraints="NO" id="XDg-Ek-4ZB" customClass="PhotoProfilArrondie" customModule="apptchat" customModuleProvider="target">
+                        <rect key="frame" x="8" y="79.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="ezd-3x-Bx3"/>
+                            <constraint firstAttribute="width" constant="60" id="onI-C4-Asi"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uvO-Lp-YRq" secondAttribute="bottom" constant="20" id="Gnh-Jd-Qj3"/>
+                    <constraint firstItem="uvO-Lp-YRq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="TJq-UD-iKX"/>
+                    <constraint firstItem="XDg-Ek-4ZB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ehJ-oc-Vep"/>
+                    <constraint firstAttribute="bottom" secondItem="XDg-Ek-4ZB" secondAttribute="bottom" constant="20" id="hOX-HB-FIS"/>
+                    <constraint firstAttribute="trailing" secondItem="uvO-Lp-YRq" secondAttribute="trailing" constant="10" id="pDl-qP-lj4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bulleMSG" destination="uvO-Lp-YRq" id="yhp-MN-YKj"/>
+                <outlet property="dateEnvoi" destination="U6N-WP-cNY" id="DcB-6R-78S"/>
+                <outlet property="droiteBulleContrainte" destination="pDl-qP-lj4" id="vKn-SC-8dA"/>
+                <outlet property="imageEnvoyee" destination="Ugf-PX-wTJ" id="kSe-Tx-SUt"/>
+                <outlet property="msgTexte" destination="52g-m5-8RI" id="eNi-xR-9Ac"/>
+                <outlet property="photoProfil" destination="XDg-Ek-4ZB" id="4Rj-k6-sFp"/>
+            </connections>
+            <point key="canvasLocation" x="1.5" y="27"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo_profil" width="412" height="480"/>
+    </resources>
+</document>
